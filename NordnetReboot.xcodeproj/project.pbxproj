@@ -3,14 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		6A0161D924B6100C001BCAC5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A0161D824B6100C001BCAC5 /* AppDelegate.swift */; };
-		6A0161DB24B6100C001BCAC5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A0161DA24B6100C001BCAC5 /* SceneDelegate.swift */; };
 		6A0161DD24B6100C001BCAC5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A0161DC24B6100C001BCAC5 /* ViewController.swift */; };
-		6A0161E024B6100C001BCAC5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A0161DE24B6100C001BCAC5 /* Main.storyboard */; };
 		6A0161E224B61013001BCAC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A0161E124B61013001BCAC5 /* Assets.xcassets */; };
 		6A0161E524B61013001BCAC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A0161E324B61013001BCAC5 /* LaunchScreen.storyboard */; };
 		6A0161EA24B61013001BCAC5 /* NordnetReboot WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 6A0161E924B61013001BCAC5 /* NordnetReboot WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -20,6 +18,10 @@
 		6A0161FE24B61014001BCAC5 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A0161FD24B61014001BCAC5 /* InterfaceController.swift */; };
 		6A01620024B61014001BCAC5 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A0161FF24B61014001BCAC5 /* ExtensionDelegate.swift */; };
 		6A01620224B61015001BCAC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A01620124B61015001BCAC5 /* Assets.xcassets */; };
+		6A01621224B61120001BCAC5 /* Reboot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A01621124B61120001BCAC5 /* Reboot.swift */; };
+		6A01621324B61142001BCAC5 /* Reboot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A01621124B61120001BCAC5 /* Reboot.swift */; };
+		6A01621624B61164001BCAC5 /* APIRequest in Frameworks */ = {isa = PBXBuildFile; productRef = 6A01621524B61164001BCAC5 /* APIRequest */; };
+		6A01621924B61194001BCAC5 /* APIRequest in Frameworks */ = {isa = PBXBuildFile; productRef = 6A01621824B61194001BCAC5 /* APIRequest */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,9 +69,7 @@
 /* Begin PBXFileReference section */
 		6A0161D524B6100C001BCAC5 /* NordnetReboot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NordnetReboot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A0161D824B6100C001BCAC5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6A0161DA24B6100C001BCAC5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		6A0161DC24B6100C001BCAC5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		6A0161DF24B6100C001BCAC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6A0161E124B61013001BCAC5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6A0161E424B61013001BCAC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6A0161E624B61013001BCAC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -82,6 +82,7 @@
 		6A0161FF24B61014001BCAC5 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		6A01620124B61015001BCAC5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6A01620324B61015001BCAC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6A01621124B61120001BCAC5 /* Reboot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reboot.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A01621624B61164001BCAC5 /* APIRequest in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A01621924B61194001BCAC5 /* APIRequest in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,6 +112,7 @@
 				6A0161ED24B61013001BCAC5 /* NordnetReboot WatchKit App */,
 				6A0161FC24B61014001BCAC5 /* NordnetReboot WatchKit Extension */,
 				6A0161D624B6100C001BCAC5 /* Products */,
+				6A01621724B61194001BCAC5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -126,9 +130,8 @@
 			isa = PBXGroup;
 			children = (
 				6A0161D824B6100C001BCAC5 /* AppDelegate.swift */,
-				6A0161DA24B6100C001BCAC5 /* SceneDelegate.swift */,
+				6A01621124B61120001BCAC5 /* Reboot.swift */,
 				6A0161DC24B6100C001BCAC5 /* ViewController.swift */,
-				6A0161DE24B6100C001BCAC5 /* Main.storyboard */,
 				6A0161E124B61013001BCAC5 /* Assets.xcassets */,
 				6A0161E324B61013001BCAC5 /* LaunchScreen.storyboard */,
 				6A0161E624B61013001BCAC5 /* Info.plist */,
@@ -157,6 +160,13 @@
 			path = "NordnetReboot WatchKit Extension";
 			sourceTree = "<group>";
 		};
+		6A01621724B61194001BCAC5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -175,6 +185,9 @@
 				6A0161EC24B61013001BCAC5 /* PBXTargetDependency */,
 			);
 			name = NordnetReboot;
+			packageProductDependencies = (
+				6A01621524B61164001BCAC5 /* APIRequest */,
+			);
 			productName = NordnetReboot;
 			productReference = 6A0161D524B6100C001BCAC5 /* NordnetReboot.app */;
 			productType = "com.apple.product-type.application";
@@ -209,6 +222,9 @@
 			dependencies = (
 			);
 			name = "NordnetReboot WatchKit Extension";
+			packageProductDependencies = (
+				6A01621824B61194001BCAC5 /* APIRequest */,
+			);
 			productName = "NordnetReboot WatchKit Extension";
 			productReference = 6A0161F824B61014001BCAC5 /* NordnetReboot WatchKit Extension.appex */;
 			productType = "com.apple.product-type.watchkit2-extension";
@@ -243,6 +259,9 @@
 				Base,
 			);
 			mainGroup = 6A0161CC24B6100C001BCAC5;
+			packageReferences = (
+				6A01621424B61164001BCAC5 /* XCRemoteSwiftPackageReference "APIRequest.swift" */,
+			);
 			productRefGroup = 6A0161D624B6100C001BCAC5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -261,7 +280,6 @@
 			files = (
 				6A0161E524B61013001BCAC5 /* LaunchScreen.storyboard in Resources */,
 				6A0161E224B61013001BCAC5 /* Assets.xcassets in Resources */,
-				6A0161E024B6100C001BCAC5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,7 +309,7 @@
 			files = (
 				6A0161DD24B6100C001BCAC5 /* ViewController.swift in Sources */,
 				6A0161D924B6100C001BCAC5 /* AppDelegate.swift in Sources */,
-				6A0161DB24B6100C001BCAC5 /* SceneDelegate.swift in Sources */,
+				6A01621224B61120001BCAC5 /* Reboot.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,6 +319,7 @@
 			files = (
 				6A01620024B61014001BCAC5 /* ExtensionDelegate.swift in Sources */,
 				6A0161FE24B61014001BCAC5 /* InterfaceController.swift in Sources */,
+				6A01621324B61142001BCAC5 /* Reboot.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,14 +339,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		6A0161DE24B6100C001BCAC5 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6A0161DF24B6100C001BCAC5 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		6A0161E324B61013001BCAC5 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -619,6 +630,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6A01621424B61164001BCAC5 /* XCRemoteSwiftPackageReference "APIRequest.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/GroupeMINASTE/APIRequest.swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6A01621524B61164001BCAC5 /* APIRequest */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6A01621424B61164001BCAC5 /* XCRemoteSwiftPackageReference "APIRequest.swift" */;
+			productName = APIRequest;
+		};
+		6A01621824B61194001BCAC5 /* APIRequest */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6A01621424B61164001BCAC5 /* XCRemoteSwiftPackageReference "APIRequest.swift" */;
+			productName = APIRequest;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6A0161CD24B6100C001BCAC5 /* Project object */;
 }
