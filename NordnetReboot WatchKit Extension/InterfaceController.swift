@@ -19,7 +19,7 @@ class InterfaceController: WKInterfaceController {
         button.setEnabled(false)
         
         // Send the reboot request
-        Reboot.reboot() {
+        Reboot.reboot() { _ in
             // Enable the button
             self.button.setEnabled(true)
         }

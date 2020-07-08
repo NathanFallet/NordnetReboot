@@ -13,7 +13,7 @@ class Reboot {
     
     static let authorization = "Basic bm9yZG5ldDpub3JkbmV0"
     
-    static func reboot(completionHandler: @escaping () -> ()) {
+    static func reboot(completionHandler: @escaping (Bool) -> ()) {
         // Set configuration if not done yet
         if APIConfiguration.current == nil {
             APIConfiguration.current = APIConfiguration(host: "192.168.5.1", scheme: "http").with(decoder: RebootDecoder())
@@ -31,9 +31,15 @@ class Reboot {
                     // Call the request with the session key
                     APIRequest("GET", path: "/rebootinfo.cgi").with(header: "Authorization", value: authorization).with(name: "sessionKey", value: group[1]).execute(String.self) { data2, status2 in
                         // Show success back
-                        completionHandler()
+                        completionHandler(true)
                     }
+                } else {
+                    // Something went wrong
+                    completionHandler(false)
                 }
+            } else {
+                // Something went wrong
+                completionHandler(false)
             }
         }
     }

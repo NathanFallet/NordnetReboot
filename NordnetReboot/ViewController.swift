@@ -35,7 +35,7 @@ class ViewController: UIViewController {
         button.isEnabled = false
         
         // Send the reboot request
-        Reboot.reboot() {
+        Reboot.reboot() { _ in
             // Enable the button
             self.button.isEnabled = true
         }
